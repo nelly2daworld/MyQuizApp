@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDE03"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFF00"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            style="@style/Questions"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="General Quiz"
+                android:textColor="#0b37ff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/questionOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. What is 4 + 4 = ?"
+                android:onClick="questionOne"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <LinearLayout style="@style/Questions"
+                >
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:id="@+id/incorrect1"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:id="@+id/incorrect2"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8"
+                    android:id="@+id/correct"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:id="@+id/incorrect3"/>
+
+            </LinearLayout>
+
+
+        <!--</LinearLayout>-->
+        <LinearLayout
+            style="@style/Questions"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. How many countries are there in South America?"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <LinearLayout style="@style/Questions">
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/RGroup">
+                    
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_button10"
+                        android:text="10"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_button12"
+                        android:text="12"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_button8"
+                        android:text="8"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_button11"
+                        android:text="11"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                style="@style/Questions"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/questionSeven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. Check all that apply - Which company has a Silicon Valley location?"
+                    android:textColor="#000000"
+                    android:textSize="30sp" />
+
+                <LinearLayout style="@style/Questions"
+                    android:padding="10sp"
+                    android:orientation="vertical">
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkboxOne"
+                        android:text="FashionNova"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkboxTwo"
+                        android:text="Google"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkboxThree"
+                        android:text="Asana"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkboxFour"
+                        android:text="MapBox"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+                </LinearLayout>
+
+                <!--</LinearLayout>-->
+                <LinearLayout
+                    style="@style/Questions"
+                    android:orientation="vertical"
+                    android:padding="10sp"
+                    >
+
+                    <TextView
+                        android:id="@+id/questionSix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.What is the most basic unit of information storage?"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+                    <LinearLayout style="@style/Questions">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:id="@+id/editText1"/>
+
+                    </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/Questions"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/questionThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6. Which one is the language of the future?"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                    <LinearLayout style="@style/Questions"
+                        android:padding="10sp"
+                        android:orientation="vertical">
+
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:id="@+id/Languages">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/language1"
+                                android:text="English"
+                                android:textAppearance="?android:textAppearanceMedium"/>
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/language2"
+                                android:text="Portuguese"
+                                android:textAppearance="?android:textAppearanceMedium"/>
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/language3"
+                                android:text="Mandarin"
+                                android:textAppearance="?android:textAppearanceMedium"/>
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/language4"
+                                android:text="Lang4"
+                                android:textAppearance="?android:textAppearanceMedium"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/submitBtn"
+                android:text="Check My Grade"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
